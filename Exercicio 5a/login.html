@@ -63,19 +63,26 @@
 
         }
 
+        h2{
+            font-size: 30px;
+        }
+
         h3 {
             font-family: 'Montserrat', sans-serif;
             font-size: 16px;
-          
+
         }
 
-        h4 {
+        p {
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
             font-size: 20px;
             font-family: 'Montserrat', sans-serif;
         }
 
         .Avançar {
-            margin-top: 6rem;
+            margin-top: 4rem;
             background-color: #7b5a31;
             height: 3rem;
             width: 18rem;
@@ -85,14 +92,7 @@
             border-radius: 0.5rem;
         }
 
-        .Avançar a {
-            color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: 18px;
-            font-family: 'Montserrat', sans-serif;
-            
-        }
+        
 
 
         .login {
@@ -113,7 +113,7 @@
         }
 
         .titulo {
-            margin-bottom: 1rem;
+            margin-bottom: 0rem;
         }
 
         .imgcontainer {
@@ -130,25 +130,31 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 1rem;
-        
+            margin-top: 0rem;
+
         }
 
-        .container{
+        .container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        
+
         }
 
-        .Voltar{
+        .Voltar {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             margin: 0;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
         }
+
+    
     </style>
 
 </head>
@@ -169,24 +175,26 @@
                 <form class="modal-content animate" action="/action_page.php" method="post">
 
                     <div class="container">
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
-  <p></p>
-                        <p></p>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                      
+                        <div class="questions"> 
+                            <label for="uname"><h2><b>Username</b></h2></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <p></p>
+                            <label for="psw"><h2><b>Password</b></h2></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                           
+                        </div>
 
-                        <a class="Avançar"
-                            href="C:\Users\HP\Documents\UNA\design-interface\Exercicio 5a\pagcurriculo.html"><h4>Login</h4></a>
+                        <a class="Avançar"  href="C:\Users\HP\Documents\UNA\design-interface\Exercicio 5a\pagcurriculo.html">
+                            <p><b>Entrar</b></p>
+                        </a>
 
                     </div>
-                        <a class="Voltar" href="C:\Users\HP\Documents\UNA\design-interface\Exercicio 5a\index.html">
-                            Cancel</a>
-                        <h3>Não tem uma conta? <a class="Cadastro"
-                                href="C:\Users\HP\Documents\UNA\design-interface\Exercicio 5a\cadastro.html ">Cadastre-se!</a>
-                        </h3>
-                
+                    <a class="Voltar" href="C:\Users\HP\Documents\UNA\design-interface\Exercicio 5a\index.html">
+                        <b>Cancelar</b></a>
+                    <h3>Não tem uma conta? <a class="Cadastro"
+                            href="C:\Users\HP\Documents\UNA\design-interface\Exercicio 5a\cadastro.html ">Cadastre-se!</a>
+                    </h3>
+
                 </form>
             </div>
         </div>
