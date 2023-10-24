@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script type="text/javascript">
+        function somar() {
+            var n1 = parseFloat(num1.value);
+
+            var n2 = parseFloat(num2.value);
+
+
+            var resp = n1 + n2;
+
+            resposta.innerHTML = "Soma: " + resp;
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <input id="num1" type="text">
+    <input id="num2" type="text">
+
+    <button onclick="somar()">Ok</button>
+    <div id="resposta"></div>
+
+</body>
+
+</html>
